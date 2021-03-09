@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="highlight/darcula.css" />
+  </head>
+  <body>
+    <!-- Hero section -->
+    <section id="subhero" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
+          <div class="tm-next">
+              <a href="index.html#project" class="navbar-brand external"><i class="fas fa-caret-left"></i> Back</a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <!--li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#blog">Blog</a>
+              </li-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="text-center tm-hero-text-container">
+        <h2 class="tm-hero-title">Blog</h2>
+      </div>
+    </section>
+
+    <section id="blog" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row" id="filterBtnContainer">
+          <p class="mb-4 tm-intro-text">
+            Filtres&nbsp;
+            <a href="#" class="badge badge-danger px-3 all" onclick="filterSelection('all')">all</a>
+            <a href="#" class="badge badge-light px-3 site" onclick="filterSelection('site')">site</a>
+            <a href="#" class="badge badge-light px-3 orientation" onclick="filterSelection('orientation')">orientation</a>
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-3 site">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Ajout du blog</h5>
+                <p class="card-text">Pour porter l'histoire du site à la postérité.</p>
+                <div>
+                  <span class="badge">08/03/2021</span>
+                  <span class="badge badge-primary float-right">site</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 orientation">
+              <div class="card-body">
+                <h5 class="card-title text-success">JPO IIM</h5>
+                <p class="card-text">Journée portes ouverte à IIM.</p>
+                <div>
+                  <span class="badge">06/03/2021</span>
+                  <span class="badge badge-success float-right">orientation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 site">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Création du site</h5>
+                <ul>
+                  <li>Recherche des resources graphiques (j'aime bien les tournesols)</li>
+                  <li>Adaption du template</li>
+                  <li>Rédaction des pages</li>
+                </ul>
+                <div>
+                  <span class="badge">13/02/2021 à 27/02/2021</span>
+                  <span class="badge badge-primary float-right">site</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 site">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Recherche du template</h5>
+                <p class="card-text">Recherche d'un template correspondant à mon template.<br/>
+                  Le plus approchant est <a href="https://templatemo.com/tm-525-the-town">The Town de templatemo</a></p>
+                <div>
+                  <span class="badge">07/02/2021</span>
+                  <span class="badge badge-primary float-right">site</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 orientation">
+              <div class="card-body">
+                <h5 class="card-title text-success">JPO à Paris</h5>
+                <p class="card-text">Journée portes ouvertes</p>
+                <ul>
+                  <li>Université de Versailles / IUT de Vélizy : https://www.jpo-uvsq.fr/fr</li>
+                  <li>Université Sorbonne, licence informatique :
+                    https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique</li>
+                  <li>EFREI : https://www.efrei.fr/nous-rencontrer/portes-ouvertes/</li>
+                </ul>
+                <div>
+                  <span class="badge">06/02/2021</span>
+                  <span class="badge badge-success float-right">orientation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 orientation">
+              <div class="card-body">
+                <h5 class="card-title text-success">JPO à La Rochelle</h5>
+                <p class="card-text">Journée portes ouvertes à l'université et IUT de La Rochelle https://app.imagina.io/module/198307/111191</p>
+                <div>
+                  <span class="badge">30/01/2021</span>
+                  <span class="badge badge-success float-right">orientation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 site">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Design du site</h5>
+                <p class="card-text">Design sur papier du site.<br/>Il devra contenir:</p>
+                <ul>
+                  <li>Une grande image de présentaion</li>
+                  <li>Une section contenant mes travaux de programmation avec des liens vers des pages de détails</li>
+                  <li>Des diaporama pour mes dessins et mes photos</li>
+                </ul>
+                <div>
+                  <span class="badge">23/01/2021</span>
+                  <span class="badge badge-primary float-right">site</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="footer">
+      <footer class="text-center small">
+          <p class="mb-0">
+            Juliette MORENO &copy; 2021
+          </p>
+        </footer>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="highlight/highlight.pack.js"></script>
+    <script>
+	  // Init code highlight
+	  hljs.initHighlightingOnLoad();
+
+      function filterSelection(c) {
+        $('.card').each(function() {
+          if(c==='all' || $(this).hasClass(c)) {
+            $(this).removeClass("d-none");
+          } else {
+            $(this).addClass("d-none");
+          }
+        });
+        $('#filterBtnContainer a').each(function() {
+          if ($(this).hasClass(c)) {
+            $(this).removeClass("badge-light");
+            $(this).addClass("badge-danger");
+          } else {
+            $(this).removeClass("badge-danger");
+            $(this).addClass("badge-light");
+          }
+        });
+      }
+
+      $(function(){
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){
+          if($(document).scrollTop() > 70) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+
+        // Close mobile menu after click
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show');
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+                filter: ':not(.external)'
+            });
+      });
+    </script>
+  </body>
+</html>
