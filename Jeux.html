@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jeux</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="highlight/darcula.css" />
+  </head>
+  <body>    
+    <!-- Hero section -->
+    <section id="subhero" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="index.html#project" class="navbar-brand external"><i class="fas fa-caret-left"></i> Back</a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#demo">Mes jeux</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#stage">Projet</a>
+              </li>
+            </ul>
+          </div>        
+        </div>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <h2 class="tm-hero-title">Jeux</h2>
+      </div>
+    </section>
+
+    <section id="demo" class="tm-section-pad-top">
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">Mes jeux</h2>
+                <p class="mb-4 tm-intro-text">
+                  Que ce soit pendant mes stages ou sur mon temps libre, j'ai eu l'occasion de programmer de petits jeux.
+              </p>
+                <p class="mb-5 tm-intro-text">
+                  Comme par exemple, le jeu "Pierre, Feuille, Ciseaux". </p>
+			  <pre><code class="python">
+    pcf_list = ["pierre", "feuille", "ciseaux"]
+    from random import shuffle
+
+    rep = str(input("Bonjour, voulez-vous jouer avec moi à Pierre/Feuille/Ciseaux ?"))
+
+    if rep == "Oui":
+      print("Je vais faire le décompte et je répondrai après toi.")
+      print("1, 2, 3, pierre, feuille, ciseaux !")
+      pcf = input()
+      shuffle(pcf_list)
+      print(pcf_list[0])
+      if pcf == "pierre":
+        if pcf_list[0] == "pierre":
+            print("C'est un match nul.")
+        elif pcf_list[0] == "feuille":
+            print("J'ai gagné !")
+        else:
+            print("J'ai perdu.")
+      if pcf == "feuille":
+        if pcf_list[0] == "feuille":
+            print("C'est un match nul.")
+        elif pcf_list[0] == "pierre":
+            print("J'ai gagné !")
+        else:
+            print("J'ai perdu.")
+      if pcf == "ciseaux":
+        if pcf_list[0] == "ciseaux":
+            print("C'est un match nul.")
+        elif pcf_list[0] == "feuille":
+            print("J'ai gagné !")
+        else:
+            print("J'ai perdu.")
+
+    else:
+      print("Dommage... Au-revoir.")
+        </code></pre>
+                <div class="tm-next">
+                  <a href="https://colab.research.google.com/drive/13KHv4rwIUpEC8e1eslSPUpYqneHh7q52?usp=sharing" target="_blank" class="tm-intro-text tm-btn-primary">Open in Colab</a>
+                </div>
+                  <p class="mb-5 tm-intro-text tm-section-pad-top">
+                  Ou comme le jeu du Pendu. </p>
+        <pre><code class="python">
+    word_list = ["t", "e", "s", "t"]
+    answer_list = ["_", "_", "_", "_"]
+    chance = 10
+
+    rep = str(input("Bonjour, voulez-vous jouer avec moi au pendu ?"))
+
+    if rep == "Oui":
+      print("Mon mot comporte 4 lettres.")
+
+      while answer_list != word_list and chance > 0:
+        print("Donne-moi une lettre.")
+          letter = input()
+          if letter == "t":
+            answer_list[0] = "t"
+            answer_list[3] = "t"
+            print(answer_list)
+          elif letter == "e":
+            answer_list[1] = "e"
+            print(answer_list)
+          elif letter == "s":
+            answer_list[2] = "s"
+            print(answer_list)
+          else:
+            print("Faux.")
+            chance -= 1
+            print("Il te reste {} chance(s).".format(chance))
+              if chance == 0:
+                print("Tu as perdu.")
+
+      if answer_list == word_list:
+        print("Tu as gagné !")
+
+    else:
+      print("Dommage... Au-revoir.")
+        </code></pre>
+                <div class="tm-next">
+                  <a href="https://colab.research.google.com/drive/14sWO51_bbMfYb3y49ECWBb02CteU5toV?usp=sharing" target="_blank" class="tm-intro-text tm-btn-primary">Open in Colab</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="stage" class="tm-section-pad-top tm-section-pad-bottom">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">Projet</h2>
+                <p class="mb-4 tm-intro-text">
+                  J'ai également participé à un jeu, dont vous pouvez voir le rendu graphique ci-dessous.
+              </p>
+			  <img src="img/PyMonsterPhysics.png" class="img-fluid"></img>
+                <p class="mb-4 tm-intro-text">
+                  Le jeu a été réalisé grâce aux tutoriels du site <a rel="nofollow" target="_blank" href="https://arcade.academy/">Python Arcade Library</a>.
+              </p>
+                <p class="mb-4 tm-intro-text">
+                  Pour ma part, j'ai surtout participé au level design, grâce à Tiles Map editor, téléchargeable <a rel="nofollow" target="_blank" href="https://www.mapeditor.org/">ici</a>.
+              </p>
+        <img src="img/use_tileset.png" class="img-fluid"></img>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="footer">
+      <footer class="text-center small">
+          <p class="mb-0">
+            Juliette MORENO &copy; 2021
+          </p>
+        </footer>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="highlight/highlight.pack.js"></script> 
+    <script>
+	  // Init code highlight
+	  hljs.initHighlightingOnLoad();
+
+      $(function(){
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 70) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+                filter: ':not(.external)'
+            });        
+      });
+    </script>
+  </body>
+</html>
