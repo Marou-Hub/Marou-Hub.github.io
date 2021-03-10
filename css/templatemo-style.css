@@ -170,7 +170,7 @@ a:focus {
 #subhero {
   background-image: url(../img/the-town-bg-03.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   height: 20vh;
   min-height: 75px;
   position: relative;
